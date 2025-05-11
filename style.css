@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #ffffff;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+img {
+    width: 600px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+figure:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.precasamento {
+    background: linear-gradient(to right, #7a490046, #ffffff);
+    width: 85%;
+    justify-content: space-around;
+    gap: 50px;
+    list-style: none;
+    display: flex;
+    padding: 20px;
+}
+
+.ddn {
+    justify-content: flex-end;
+    display: flex;
+}
+
+.diadanoiva {
+    background: linear-gradient(to left, #7a490046, #ffffff);
+    margin-left: auto;
+    width: 85%;
+    justify-content: space-around;
+    gap: 50px;
+    list-style: none;
+    display: flex;
+    padding: 20px;
+}
+
+.crm {
+    background: linear-gradient(to right, #7a490046, #ffffff);
+    width: 85%;
+    justify-content: space-around;
+    gap: 50px;
+    list-style: none;
+    display: flex;
+    padding: 20px;
+}
+
+.fest {
+    background: linear-gradient(to left, #7a490046, #ffffff);
+    margin-left: auto;
+    width: 85%;
+    justify-content: space-around;
+    gap: 50px;
+    list-style: none;
+    display: flex;
+    padding: 20px;
+}
+
+.fst {
+    justify-content: flex-end;
+    display: flex;
+}
+
+.ldm {
+    background: linear-gradient(to right, #7a490046, #ffffff);
+    width: 85%;
+    justify-content: space-around;
+    gap: 50px;
+    list-style: none;
+    display: flex;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.container h2 {
+    margin-right: 50px;
+    margin-left: 50px;
+    font-family: "Poiret One", sans-serif;
+    font-size: 2rem;
+}
+
+header {
+    background: #ffffff;
+    padding: 4rem 1rem;
+    text-align: center;
+    margin-top: 60px;
+}
+
+header h1 {
+    font-family: "Great Vibes", cursive;
+    color: #747474;
+    font-size: 6rem;
+}
+
+nav {
+    width: 100%;
+    position: fixed;
+    background: #7a4900;
+    padding: 0.8rem;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    text-align: center;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 500;
+    padding: 0.5rem;
+    transition: color 0.2s;
+}
+
+footer {
+    margin-top: 50px;
+    background: #7a4900;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    .container h2 {
+        font-size: 1.5rem;
+        margin: 1rem;
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 3rem;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .precasamento,
+    .diadanoiva,
+    .crm,
+    .fest,
+    .ldm {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+}
