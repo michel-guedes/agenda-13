@@ -8,12 +8,18 @@
     <link rel="stylesheet" href="/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poiret+One&family=Rajdhani:wght@400;500&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poiret+One&family=Rajdhani:wght@400;500&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <nav class="menu">
-        <ul>
+        <div class="nav-container">
+            <span class="brand">Menu</span>
+            <button class="hamburger" id="hamburger">&#9776;</button>
+        </div>
+        <ul id="nav-list" class="nav-list">
             <li><a href="#pre-casamento">Pré-Casamento</a></li>
             <li><a href="#dia-da-noiva">Dia da Noiva</a></li>
             <li><a href="#cerimonia">Cerimônia</a></li>
@@ -124,7 +130,7 @@
                 </li>
                 <li>
                     <figure>
-                        <a href="/images/luademel2.jpeg"" target="_blank">
+                        <a href="/images/luademel2.jpeg"" target=" _blank">
                             <img src="/images/luademel2.jpeg" alt="Foto Foto Lua de Mel 2"><!--Imagem com link Amazon-->
                         </a>
                         <figcaption>Foto Lua de Mel 02.</figcaption>
@@ -136,6 +142,14 @@
     <footer>
         <p>Site desenvolvido por Michel G. da Silva.</p>
     </footer>
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navList = document.getElementById('nav-list');
+
+        hamburger.addEventListener('click', () => {
+            navList.classList.toggle('active');
+        });
+    </script>
 </body>
 
 </html>
